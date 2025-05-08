@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Server Home Page</title>
+    <style>
+        h1{
+            display: flex;
+            border-bottom: 1px double black;
+            justify-content: center;
+            text-align: center;
+            margin: auto;
+            width: 60%;
+            background-color: rgba(245, 248, 251, 0.906);
+            box-shadow: 1px 1px;
+            color:rgb(75, 75, 84);
+            border-radius: 15px;
+            padding: 8px;
+        }
+        .parent{
+            margin-top: 10%;
+            padding: 2px;
+            display: flex;
+            flex-direction: column;
+            justify-self: center;
+            text-align: center;
+            max-height: 100%;
+            }
+        body{
+            background-color: rgba(179, 247, 247, 0.897);
+            padding: 20px;
+            }
+        table, th, td{
+            border-radius: 10px;
+            border: 3px solid black;
+        }
+        table{
+            padding: 8px;
+            height: 300px;
+            background-color: white;
+        }
+        a{
+            text-decoration: none;
+            color: rgb(77, 77, 207);
+        }
+        .ref{
+            text-align: center;
+            justify-content: center;
+            margin-top: 10px;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Home page</h1>
+    
+    <div class="parent">
+        
+        <table>
+            <tr>
+                <th colspan="2" style="background-color: white;">List of pages</th>
+            </tr>
+            <tr>
+                <td style="background-color: white;">Page name</td>
+                <td style="background-color: white;">Access type</td>
+            </tr>
+            <tr>
+                <td><a href="index.html">index.html (Home page)</a></td>
+                <td style="background-color: rgb(87, 230, 87);">Allowed</td>
+            </tr>
+            <tr>
+                <td><a href="webpage.html">webpage</a></td>
+                <td style="background-color: rgb(87, 230, 87);">Allowed</td>
+            </tr>
+            <tr>
+                <td><a href="bannedpage.html">bannedpage</a></td>
+                <td style="background-color: rgb(235, 53, 53);">Banned</td>
+            </tr>
+        </table>
+    </div>
+    <div class="ref">To access the pages, you just add "/pagename" to the URL (or click on the name in the table)</div>
+</body>
+</html>
